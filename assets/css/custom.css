@@ -1,0 +1,181 @@
+body{
+  padding: 0px ;
+  margin: 0px ;
+/*  overflow-y: hidden ;*/
+  display: grid ;
+  grid-gap: 80px ;
+  align-items: center ;
+  grid-template-areas:
+    ". about .  "
+    "contact header portfolio" 
+    ". experience ."
+    ;
+  background-color: #252525 ;
+}
+
+/*        COLORS      */
+h4{
+  color: #7890a8  ;
+}
+h1{
+  color: #ffffff ;
+}
+h3{
+  color: #90a8c0  ;
+}
+p{
+  color: #eee ;
+}
+li{
+  color: #eee ;
+}
+/*        COLORS      */
+
+.content{
+  margin: auto ;
+  padding-left: 10px ;
+  padding-right: 10px ;
+}
+
+header{
+  grid-area: header ;
+  display: grid ;
+  grid-template-areas:
+    ". btn-about ."
+    "btn-contact box btn-port"
+    ". btn-experience ."
+    ;
+  align-items: center ;
+}
+
+header #box {
+  grid-area: box ;
+  background-image: url("../images/cam.jpg");
+  background-size: contain ;
+  background-position: center ;
+  background-repeat: no-repeat ;
+}
+header #head-btn-port{
+  grid-area: btn-port ;
+}
+header .nav-btn{
+  text-decoration: none ;
+  border-radius: 300px ;
+  padding: 10px ;
+  color: #fff ;
+  border-width: 1px ;
+  border-style: solid ;
+  border-color: #fff ;
+}
+header .nav-btn:hover{
+  background-color: #fff ;
+  color: #7890a8  ;
+  border-color: #7890a8 ;
+}
+
+/*7890a8*/
+header #head-btn i{
+  font-size: 50px ;
+  margin-left: 40%;
+  margin-top: 5%
+}
+
+/*end of header*/
+
+
+/*about*/
+#about{
+  grid-area: about ;
+}
+
+#about > .content{
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  grid-template-areas:
+    "header header"
+    "intro intro"
+    "education personal"
+    ;
+}
+
+#about h1{
+  grid-area: header ;
+}
+#about .intro{
+  grid-area: intro ;
+  display: grid ;
+  grid-template-columns: 1fr 3fr ;
+  grid-template-areas: 
+    "left right" 
+    ;
+}
+
+#about .intro img{
+  width: 90% ;
+  border-radius: 50% ;
+}
+
+#about .intro .graphic{
+  grid-area: left;
+}
+
+#about .intro .content{
+  grid-area: right ;
+}
+
+#about .education{
+  grid-area: education ;
+}
+
+#about .personal{
+  grid-area: personal ;
+}
+
+#about .personal img{
+  border-radius: 50% ;
+}
+
+#swim{
+  display: grid ;
+  grid-template-areas: "content graphic";
+}
+
+#swim .content{
+  grid-area: content;
+}
+
+#swim .graphic{
+  grid-area: graphic;
+  width: 90% ;
+}
+#photography{
+  display: grid ;
+  grid-template-areas: "graphic content";
+}
+#photography .content{
+  grid-area: content ;
+}
+
+#photography .graphic{
+  grid-area: graphic;
+  width: 90% ;
+}
+
+/*portfolio*/
+#portfolio{
+  grid-area: portfolio ;
+}
+
+/*contact*/
+#contact{
+  grid-area: contact ;
+}
+
+/*expereince*/
+#experience{
+  grid-area: experience ;
+}
+
+footer{
+	padding: 20px;
+}
