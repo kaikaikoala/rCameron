@@ -3,14 +3,18 @@ body{
   margin: 0px ;
 /*  overflow-y: hidden ;*/
   display: grid ;
-  grid-gap: 80px ;
+  grid-gap: 20px ;
   align-items: center ;
   grid-template-areas:
-    ". about .  "
-    "contact header portfolio" 
-    ". experience ."
+    "header about portfolio skills experience contact " 
     ;
   background-color: #252525 ;
+}
+
+section{
+	width: 90vw;
+	margin-right: 1vw ;
+	margin-left: 1vw ;
 }
 
 /*        COLORS      */
@@ -38,29 +42,33 @@ li{
 }
 
 header{
+  height: 100vh ;
+  margin-right: 2vw ;
+  margin-left: 2vw ;
+  width: 95vw ;
   grid-area: header ;
   display: grid ;
   grid-template-areas:
-    ". btn-about ."
-    "btn-contact box btn-port"
-    ". btn-experience ."
+    ". . ."
+    ". . btn"
+    ". . ."
     ;
   align-items: center ;
-}
-
-header #box {
-  grid-area: box ;
   background-image: url("../images/cam.jpg");
   background-size: contain ;
   background-position: center ;
   background-repeat: no-repeat ;
 }
 header #head-btn-port{
-  grid-area: btn-port ;
+  grid-area: btn ;
 }
 header .nav-btn{
+  float: right ;
   text-decoration: none ;
-  border-radius: 300px ;
+  border-radius: 50% ;
+  margin-right: 10px ;
+  height: 60px ;
+  width: 60px ;
   padding: 10px ;
   color: #fff ;
   border-width: 1px ;
@@ -74,7 +82,7 @@ header .nav-btn:hover{
 }
 
 /*7890a8*/
-header #head-btn i{
+header #head-btn-port i{
   font-size: 50px ;
   margin-left: 40%;
   margin-top: 5%
