@@ -9,6 +9,7 @@ body{
   grid-template-areas:
     "header about portfolio skills experience contact " 
     ;
+  background-color: #252525 ;
 }
 
 section{
@@ -26,12 +27,16 @@ section{
 }
 
 .box{
-  height: 50vh ;
   width: 95% ;
+  height: 100% ;
   margin: auto ;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #252525 ;
+  padding-left: 10px ;
+  padding-right: 10px ;
+}
+
+img{
+  margin: auto;
+  width: 90% ;
 }
 
 /*        COLORS      */
@@ -54,31 +59,32 @@ li{
 
 
 header{
-  height: 100vh ;
+  height: 100vh;
   width: 100vw ;
   grid-area: header ;
-  background: linear-gradient( to right , #fff , #90a8c0 ) ;
 }
 
 header .box{
   display: grid ;
+  grid-template-rows: 1fr 1fr 1fr ;
   grid-template-areas:
     ". . ."
-    " graphic graphic graphic "
+    "graphic graphic graphic"
     ". . btn"
     ;
   align-items: center ;
   background-color: transparent ;
 }
 
-header img{
+header #hero{
   grid-area: graphic ;
   width: 100% ;
 }
 
-header #head-btn-port{
+header #head-btn{
   grid-area: btn ;
 }
+
 header .nav-btn{
   float: right ;
   text-decoration: none ;
@@ -99,7 +105,7 @@ header .nav-btn:hover{
 }
 
 /*7890a8*/
-header #head-btn-port i{
+header #head-btn i{
   font-size: 50px ;
   margin-left: 40%;
   margin-top: 5%
@@ -111,6 +117,7 @@ header #head-btn-port i{
 /*about*/
 #about{
   grid-area: about ;
+
 }
 
 #about > .box{
@@ -130,7 +137,6 @@ header #head-btn-port i{
 }
 
 #about img{
-  width: 90% ;
   border-radius: 50% ;
   grid-area: graphic ;
 }
@@ -141,4 +147,38 @@ header #head-btn-port i{
 
 #about .btn{
   grid-area: btn ;
+}
+
+#personal{
+  /*display: none ;*/
+  height: 80vh ;
+  grid-area: about ;
+  background-color: rgba( 238 ,238 , 238 , .9) ;
+  padding-top: 5% ;
+  padding-bottom: 5% ;
+}
+
+#personal .hobby{
+  margin-left: 5% ;
+  margin-right: 5% ;
+  padding: 5% ;
+  background-color: #252525 ;
+  display: grid ;
+  grid-gap: 5% ;
+  grid-template-columns: 1fr 2fr ;
+  grid-template-areas: 
+    "header header"
+    "graphic content"
+    ;
+}
+
+#personal .hobby .header{
+  grid-area: header ;
+}
+
+#personal .hobby img{
+  grid-area: graphic ;
+}
+#personal .hobby p{
+  grid-area: content ;
 }
