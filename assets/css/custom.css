@@ -1,20 +1,37 @@
 body{
+  height: 100vh ;
   padding: 0px ;
   margin: 0px ;
-/*  overflow-y: hidden ;*/
+  overflow-y: hidden ;
   display: grid ;
   grid-gap: 20px ;
   align-items: center ;
   grid-template-areas:
     "header about portfolio skills experience contact " 
     ;
-  background-color: #252525 ;
 }
 
 section{
 	width: 90vw;
 	margin-right: 1vw ;
 	margin-left: 1vw ;
+}
+
+.btn{
+  background-color: transparent ;
+  border-radius: 300px ;
+  border-color: #fff ;
+  color: #fff ;
+  padding: 10% ;
+}
+
+.box{
+  height: 50vh ;
+  width: 95% ;
+  margin: auto ;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #252525 ;
 }
 
 /*        COLORS      */
@@ -35,30 +52,30 @@ li{
 }
 /*        COLORS      */
 
-.content{
-  margin: auto ;
-  padding-left: 10px ;
-  padding-right: 10px ;
-}
 
 header{
   height: 100vh ;
-  margin-right: 2vw ;
-  margin-left: 2vw ;
-  width: 95vw ;
+  width: 100vw ;
   grid-area: header ;
+  background: linear-gradient( to right , #fff , #90a8c0 ) ;
+}
+
+header .box{
   display: grid ;
   grid-template-areas:
     ". . ."
+    " graphic graphic graphic "
     ". . btn"
-    ". . ."
     ;
   align-items: center ;
-  background-image: url("../images/cam.jpg");
-  background-size: contain ;
-  background-position: center ;
-  background-repeat: no-repeat ;
+  background-color: transparent ;
 }
+
+header img{
+  grid-area: graphic ;
+  width: 100% ;
+}
+
 header #head-btn-port{
   grid-area: btn ;
 }
@@ -96,94 +113,32 @@ header #head-btn-port i{
   grid-area: about ;
 }
 
-#about > .content{
-  display: grid;
-  grid-template-columns: 1fr 2fr ;
+#about > .box{
+  display: grid ;
+  align-items: center ;
+  grid-gap: 5% ;
+  grid-template-columns: 1fr 1fr 1fr ;
   grid-template-areas:
-    "header header"
-    "intro intro"
-    "education personal"
-    ;
+    "header header header"
+    "graphic content content" 
+    ". . btn "
+      ;
 }
 
-#about h1{
+#about .header{
   grid-area: header ;
 }
-#about .intro{
-  grid-area: intro ;
-  display: grid ;
-  grid-template-columns: 1fr 3fr ;
-  grid-template-areas: 
-    "left right" 
-    ;
-}
 
-#about .intro img{
+#about img{
   width: 90% ;
   border-radius: 50% ;
+  grid-area: graphic ;
 }
 
-#about .intro .graphic{
-  grid-area: left;
-}
-
-#about .intro .content{
-  grid-area: right ;
-}
-
-#about .education{
-  grid-area: education ;
-}
-
-#about .personal{
-  grid-area: personal ;
-}
-
-#about .personal img{
-  border-radius: 50% ;
-}
-
-#swim{
-  display: grid ;
-  grid-template-areas: "content graphic";
-}
-
-#swim .content{
-  grid-area: content;
-}
-
-#swim .graphic{
-  grid-area: graphic;
-  width: 90% ;
-}
-#photography{
-  display: grid ;
-  grid-template-areas: "graphic content";
-}
-#photography .content{
+#about .content{
   grid-area: content ;
 }
 
-#photography .graphic{
-  grid-area: graphic;
-  width: 90% ;
-}
-
-/*portfolio*/
-#portfolio{
-  grid-area: portfolio ;
-}
-
-/*contact*/
-#contact{
-  grid-area: contact ;
-}
-
-/*expereince*/
-#experience{
-  grid-area: experience ;
-}
-
-footer{
-	padding: 20px;
+#about .btn{
+  grid-area: btn ;
 }
