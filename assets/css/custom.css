@@ -158,6 +158,12 @@ header #head-btn i{
   padding-bottom: 5% ;
 }
 
+#personal #close{
+  display: block ;
+  float: right ;
+  margin-right: 5% ;
+}
+
 #personal .hobby{
   margin-left: 5% ;
   margin-right: 5% ;
@@ -170,6 +176,10 @@ header #head-btn i{
     "header header"
     "graphic content"
     ;
+}
+
+#personal #photo{
+  margin-top: 10%;
 }
 
 #personal .hobby .header{
