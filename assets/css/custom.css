@@ -268,6 +268,7 @@ header #head-btn i{
   display: grid ;
   align-items: center ;
   height: 100% ;
+  background-color: transparent ;
   background-image: url("assets/images/p1.png") ;
   background-position: center ;
   background-size: cover ;
