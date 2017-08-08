@@ -203,6 +203,7 @@ header #head-btn i{
   grid-area: portfolio ;
   height: 95vh ;
   display: grid ;
+  grid-gap: 5% ;
   align-items: center ;
   grid-template-rows: 1fr 3fr .5fr  ;
   grid-template-columns: 2fr 3fr ;
@@ -234,6 +235,7 @@ header #head-btn i{
 
 #portfolio .display{
   grid-area: display;
+  text-align: center ;
   background-color: white ;
 }
 
@@ -263,8 +265,21 @@ header #head-btn i{
 }
 
 #portfolio .display{
-  margin-right: 5% ;
-  padding-left: 5% ;
+  display: grid ;
+  align-items: center ;
   height: 100% ;
+  background-image: url("assets/images/p1.png") ;
+  background-position: center ;
+  background-size: cover ;
+}
+
+#portfolio .display > div{
   background: #90a8c0;
+  display: none ;
+  padding-top: 5% ;
+  padding-bottom: 5% ;
+}
+
+#portfolio .display .active {
+  display: block ;
 }
