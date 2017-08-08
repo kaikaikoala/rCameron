@@ -204,11 +204,13 @@ header #head-btn i{
   height: 95vh ;
   display: grid ;
   align-items: center ;
-  grid-template-rows: 1fr 3fr ;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 3fr .5fr  ;
+  grid-template-columns: 2fr 3fr ;
   grid-template-areas: 
     "header header"
     "nav display"
+    ". ."
+    ;
 }
 
 #portfolio .header{
@@ -225,10 +227,44 @@ header #head-btn i{
 #portfolio .nav .item{
   display: grid ;
   align-items: center ;
-  background: white ;
   padding-left: 10% ;
+  border-radius: 1px ;
+  border-color: #fff ;
 }
 
 #portfolio .display{
   grid-area: display;
   background-color: white ;
+}
+
+#portfolio .nav .item a{
+  color: #fff ;
+  text-decoration: none ;
+}
+
+#portfolio #p1{
+  border-bottom-style: solid ;
+}
+
+#portfolio #p2{
+  border-bottom-style: solid ;
+}
+
+#portfolio #p3{
+  border-bottom-style: solid ;
+}
+
+#portfolio .active{
+  background: #90a8c0;
+}
+  
+#portfolio .active h3{
+  color: #fff
+}
+
+#portfolio .display{
+  margin-right: 5% ;
+  padding-left: 5% ;
+  height: 100% ;
+  background: #90a8c0;
+}
