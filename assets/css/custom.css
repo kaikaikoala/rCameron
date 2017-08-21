@@ -176,11 +176,11 @@ header #head-btn i{
   padding: 5% ;
   background-color: #252525 ;
   display: grid ;
+  align-items: center ;
   grid-gap: 5% ;
   grid-template-columns: 1fr 2fr ;
   grid-template-areas: 
-    "header header"
-    "graphic content"
+    "graphic header"
     ;
 }
 
@@ -233,11 +233,6 @@ header #head-btn i{
   border-color: #fff ;
 }
 
-#portfolio .display{
-  grid-area: display;
-  text-align: center ;
-  background-color: white ;
-}
 
 #portfolio .nav .item a{
   color: #fff ;
@@ -266,10 +261,10 @@ header #head-btn i{
 
 #portfolio .display{
   display: grid ;
+  text-align: center ;
   align-items: center ;
   height: 100% ;
-  background-color: transparent ;
-  background-image: url("assets/images/p1.png") ;
+  background-image: url("../images/p1.png") ;
   background-position: center ;
   background-size: cover ;
 }
@@ -283,4 +278,29 @@ header #head-btn i{
 
 #portfolio .display .active {
   display: block ;
+}
+
+/*contact*/
+#contact ul{
+  list-style-type: none ;
+  padding: 0px ;
+}
+
+#contact li{
+  display: inline-block ;
+}
+
+#contact i{
+}
+
+#contact .icon {
+  text-align: center ;
+  background-color: white ;
+  color: #252525 ;
+  display: inline-block ;
+  height: 60px ;
+  width: 60px ;
+  border-radius: 50% ;
+  font-size: 50px ;
+  font-style: monospace ;
 }
