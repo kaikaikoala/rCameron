@@ -280,14 +280,47 @@ header #head-btn i{
   display: block ;
 }
 
+/*skills*/
+#skills ul{
+  list-style-type: none ;
+  padding-left: 0px ;
+}
+
+#skills li{
+  padding-left: 3% ;
+  width: 20% ;
+  display: inline-block ;
+  border-right-width: 2px ;
+  border-right-style: solid ;
+  border-right-color: #fff; 
+}
+
+
+#skills .skill-group {
+  margin-top: 10% ;
+}
+#skills .skill-group div{
+  z-index: 1 ;
+  background-color: #fff ;
+  height: 20px ;
+  display: none ;
+}
+#skills .skill-group div p{
+  margin-left: 10px ;
+  color: #252525;
+}
+
+
 /*contact*/
 #contact ul{
   list-style-type: none ;
   padding: 0px ;
+  margin: 10% ;
 }
 
 #contact li{
   display: inline-block ;
+  margin: 5% ;
 }
 
 #contact i{
@@ -303,4 +336,12 @@ header #head-btn i{
   border-radius: 50% ;
   font-size: 50px ;
   font-style: monospace ;
+}
+
+#contact h1 {
+  margin: 10% ;
+}
+
+#contact p {
+  margin: 10% ;
 }
