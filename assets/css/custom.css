@@ -363,6 +363,11 @@ header #head-btn i{
 #contact p {
   margin: 10% ;
 }
+@media (min-width: 900px ){
+  #head-btn{
+    display: none ;
+  }
+}
 
 @media (min-width: 900px ) and (max-width:1130px){
   header{
