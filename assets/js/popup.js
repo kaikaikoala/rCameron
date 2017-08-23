@@ -33,44 +33,6 @@ $( document ).ready( function(){
     $("#p4").addClass("active");
     $(".display").css( "background-image" , 'url("assets/images/p4.png")' ) ;
   }) ;
-
-  //function for displaying skill level
-  $("#skills .skill-group .s1 .fa-plus").hover( function(){
-    $("#skills .skill-group .s1 i").removeClass("fa-plus");
-    $("#skills .skill-group .s1 i").addClass("fa-minus");
-    $("#skills .skill-group .s1").css( "display" , "block" ) ;
-  }) ;
-  $("#skills .skill-group .s2 .fa-plus").hover( function(){
-    $("#skills .skill-group .s2 i").removeClass("fa-plus");
-    $("#skills .skill-group .s2 i").addClass("fa-minus");
-    $("#skills .skill-group .s2").css( "display" , "block" ) ;
-  }) ;
-  $("#skills .skill-group .s3 .fa-plus").hover( function(){
-    $("#skills .skill-group .s3 i").removeClass("fa-plus");
-    $("#skills .skill-group .s3 i").addClass("fa-minus");
-    $("#skills .skill-group .s3").css( "display" , "block" ) ;
-  }) ;
-  $("#skills .skill-group .s4 .fa-plus").hover( function(){
-    $("#skills .skill-group .s4 i").removeClass("fa-plus");
-    $("#skills .skill-group .s4 i").addClass("fa-minus");
-    $("#skills .skill-group .s4").css( "display" , "block" ) ;
-  }) ;
-  $("#skills .skill-group .s5 .fa-plus").hover( function(){
-    $("#skills .skill-group .s5 i").removeClass("fa-plus");
-    $("#skills .skill-group .s5 i").addClass("fa-minus");
-    $("#skills .skill-group .s5").css( "display" , "block" ) ;
-  }) ;
-  $("#skills .skill-group .s6 .fa-plus").hover( function(){
-    $("#skills .skill-group .s6 i").removeClass("fa-plus");
-    $("#skills .skill-group .s6 i").addClass("fa-minus");
-    $("#skills .skill-group .s6").css( "display" , "block" ) ;
-  }) ;
-  $("#skills .skill-group .s7 .text").hover( function(){
-    $("#skills .skill-group .s7 i").removeClass("fa-plus");
-    $("#skills .skill-group .s7 i").addClass("fa-minus");
-    $("#skills .skill-group .s7").css( "display" , "block" ) ;
-  }) ;
-
   
 }) ;
 
