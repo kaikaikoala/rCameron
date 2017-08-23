@@ -246,6 +246,10 @@ header #head-btn i{
   text-decoration: none ;
 }
 
+#portfolio .nav .item:hover {
+  background-color: #63595c;
+}
+
 #portfolio #p1{
   border-bottom-style: solid ;
 }
@@ -257,6 +261,7 @@ header #head-btn i{
 #portfolio #p3{
   border-bottom-style: solid ;
 }
+
 
 #portfolio .active{
   background: #90a8c0;
@@ -300,6 +305,7 @@ header #head-btn i{
   border-right-width: 2px ;
   border-right-style: solid ;
   border-right-color: #fff; 
+  background-color: #63595c ;
 }
 
 
@@ -307,13 +313,12 @@ header #head-btn i{
   margin-top: 30px ;
 }
 #skills .skill-group div{
-  background-color: #fff ;
+  background-color: #63595c;
   height: 20px ;
   display: none ;
 }
 #skills .skill-group:hover div{
   display: block;
-  z-index: 4;
 }
 
 #skills .skill-group div p{
